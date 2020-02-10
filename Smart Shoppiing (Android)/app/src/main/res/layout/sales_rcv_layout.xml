@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sale_type"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:id="@+id/Sale_brand_txt"
+            android:textStyle="italic|bold"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sale_type"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_below="@+id/Sale_brand_txt"
+            android:id="@+id/Sale_type_txt"
+            android:textStyle="italic|bold"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@id/Sale_type_txt"
+            android:scaleType="centerCrop"
+            android:id="@+id/sales_image"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/sale_percent_off"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/sales_image"
+            android:textSize="20sp"
+            android:textColor="@color/red123"
+            android:textStyle="italic"
+            android:text="@string/_30_off"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/start_date"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/startdate"
+            android:layout_below="@id/sale_percent_off"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_overlay"
+            android:layout_below="@id/sale_percent_off"
+            android:id="@+id/startdate1"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:layout_toRightOf="@id/startdate"/>
+
+
+        <TextView
+            android:id="@+id/enddate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startdate"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+
+            android:textSize="15sp"
+
+            android:text="@string/end_date"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/startdate1"
+            android:id="@+id/enddate1"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:layout_toRightOf="@id/enddate"/>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundlogin"
+    tools:context=".Add_to_Cart"
+    >
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/add_cart_appbar"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/addcart_rcv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/procced_to_checkout"
+        android:layout_below="@+id/add_cart_appbar"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingStart="8dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttons"
+        android:id="@+id/procced_to_checkout"
+        android:text="@string/proceed_to_checkout" />
+
+
+</RelativeLayout>

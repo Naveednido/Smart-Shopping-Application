@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/navcart"
+            android:title="@string/cart_info" />
+
+        <item
+            android:id="@+id/nav_QR_Scanner"
+            android:icon="@drawable/qr"
+            android:title="@string/qr_code_scanner" />
+
+        <item
+            android:id="@+id/nav_like_products"
+            android:icon="@drawable/star"
+            android:title="@string/favourites" />
+
+        <item
+            android:id="@+id/nav_order_history"
+            android:icon="@drawable/category"
+            android:title="@string/order_history"/>
+        <item
+            android:id="@+id/nav_sales_notification"
+            android:icon="@drawable/bargains"
+            android:title="@string/sales_notification"/>
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/settings" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+    </group>
+
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_complaint"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/complaints" />
+        </menu>
+    </item>
+
+
+</menu>

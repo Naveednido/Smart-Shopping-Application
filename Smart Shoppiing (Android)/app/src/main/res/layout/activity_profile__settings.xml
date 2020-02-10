@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/welcome_bakground"
+    android:layout_height="match_parent"
+    tools:context=".Profile_Settings">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/profile_setting_appbar"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profile_setting_appbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilesetting_image"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/img_prof_icon"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp" />
+
+            <Button
+                android:id="@+id/btn_change_image_profileseeting"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttons"
+                android:text="@string/change_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/edittextinput"
+                android:orientation="horizontal"
+                android:paddingStart="8dp">
+
+                <TextView
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_name1"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="260dp"
+                    android:id="@+id/f_name_prof"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/edittextinput"
+                android:orientation="horizontal"
+                android:paddingStart="8dp">
+
+                <TextView
+                    android:layout_width="91dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/las"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="260dp"
+                    android:id="@+id/l_name_prof"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/edittextinput"
+                android:orientation="horizontal"
+                android:paddingStart="8dp">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone123"
+                    android:gravity="center"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="5dp"
+                    android:id="@+id/phone_prof"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/edittextinput"
+                android:orientation="horizontal"
+                android:paddingStart="8dp">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address1"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="5dp"
+                    android:id="@+id/address_prof"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edittextinput"
+                android:orientation="horizontal"
+                android:paddingStart="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/postal_code1"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="5dp"
+                    android:id="@+id/postal_code_prof"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/buttons"
+                android:text="@string/save"
+                android:id="@+id/btn_save_prof"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

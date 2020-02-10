@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgroundlogin"
+    android:layout_height="match_parent"
+    tools:context=".Favourite_Products">
+
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/favourite_products_appbar"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:id="@+id/favourite_products_product_display_rcv"
+        android:layout_below="@id/favourite_products_appbar"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
